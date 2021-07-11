@@ -3,9 +3,9 @@ import style from "./index.module.css";
 import {connect} from "react-redux";
 import {action} from '../../reducer/countReducer'
 import {bindActionCreators} from "redux";
+import { withRouter } from 'react-router-dom';
 
 const {increaseAction} = action
-
 class ArticleItem extends Component {
     constructor(props) {
         super(props)
@@ -13,15 +13,14 @@ class ArticleItem extends Component {
 
     onclick() {
         console.log(this.props)
-        this.props.onIncreaseClick()
+        this.props.history.push('detail')
+        // redux 添加计数
+        // this.props.onIncreaseClick()
     }
-
     render() {
         const {listItem} = this.props
-        const {value, onIncreaseClick} = this.props
         return (
             <div onClick={() => this.onclick()}>
-                {value}
                 <div className={style.sItem}>
                     <div className={style.title}>
                         {listItem.title}
@@ -56,4 +55,4 @@ function mapDispatchToProps(dispatch) {
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(ArticleItem)
+)(withRouter(ArticleItem))

@@ -5,3 +5,13 @@
     height: 100vh;
     overflow: auto;
 }
+.addicon {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: #f6f6f6;
+    font-size: 25px;
+    color: black;
+    border-radius: 50%;
+    overflow: hidden;
+}

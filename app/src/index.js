@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import IndexApp from './routers'
 import reportWebVitals from './reportWebVitals';
 import store from './reducer/store'
