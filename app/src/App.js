@@ -1,5 +1,4 @@
 import './App.css';
-import {Button} from 'zarm';
 import Home from './containers/home/index'
 
 function App() {

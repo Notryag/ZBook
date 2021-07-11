@@ -1,26 +1,33 @@
 import {Component} from "react";
 import style from "./index.module.css";
+import {connect} from "react-redux";
+import {action} from '../../reducer/countReducer'
+import {bindActionCreators} from "redux";
 
-export default class ArticleItem extends Component {
+const {increaseAction} = action
+
+class ArticleItem extends Component {
     constructor(props) {
         super(props)
     }
+
     onclick() {
         console.log(this.props)
-        console.log(123)
+        this.props.onIncreaseClick()
     }
+
     render() {
         const {listItem} = this.props
-        return(
+        const {value, onIncreaseClick} = this.props
+        return (
             <div onClick={() => this.onclick()}>
+                {value}
                 <div className={style.sItem}>
                     <div className={style.title}>
                         {listItem.title}
                     </div>
                     <div className={style.content}>
-                        <div className={style
-
-                            ['content-inner']}>
+                        <div className={style['content-inner']}>
                             <span className={style.ztext}>
                             {listItem.content}
                             </span>
@@ -31,3 +38,22 @@ export default class ArticleItem extends Component {
         )
     }
 }
+
+const mapStateToProps = (state, ownProps) => {
+    return {
+        value: state.count.count
+    }
+}
+
+function mapDispatchToProps(dispatch) {
+    return {
+        onIncreaseClick:bindActionCreators(increaseAction,dispatch)
+        // onIncreaseClick: () => dispatch(increaseAction())
+    }
+}
+
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(ArticleItem)

@@ -2,15 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import IndexApp from './routers'
 import reportWebVitals from './reportWebVitals';
-
-
+import store from './reducer/store'
+import { Provider } from 'react-redux';
 import 'zarm/dist/zarm.css';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <Provider store={store}>
+        <IndexApp />
+    </Provider>,
   document.getElementById('root')
 );
 
