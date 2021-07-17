@@ -22,7 +22,6 @@ let articleList = reactive([
   },
 ])
 function handleTagClick() {
-  console.log(123)
 }
 
 // getList({})

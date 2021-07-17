@@ -12,8 +12,7 @@ class ArticleItem extends Component {
     }
 
     onclick() {
-        console.log(this.props)
-        this.props.history.push('detail')
+        this.props.onClick()
         // redux 添加计数
         // this.props.onIncreaseClick()
     }

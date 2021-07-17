@@ -13,7 +13,7 @@
     "github-markdown-css": "^4.0.0",
     "highlight.js": "^10.7.2",
     "roboto-fontface": "*",
-    "vue": "^3.0.5",
+    "vue": "^3.1.5",
     "vue-router": "^4.0.6",
     "vue3-markdown-it": "^1.0.8",
     "vuex": "^4.0.0"

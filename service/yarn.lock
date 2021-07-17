@@ -2075,6 +2075,11 @@ koa-convert@^1.2.0:
     co "^4.6.0"
     koa-compose "^3.0.0"
 
+koa-cors@^0.0.16:
+  version "0.0.16"
+  resolved "https://registry.npm.taobao.org/koa-cors/download/koa-cors-0.0.16.tgz#98107993a7909e34c042986c5ec6156d77f3432e"
+  integrity sha1-mBB5k6eQnjTAQphsXsYVbXfzQy4=
+
 koa-mysql-session@^0.0.2:
   version "0.0.2"
   resolved "https://registry.npm.taobao.org/koa-mysql-session/download/koa-mysql-session-0.0.2.tgz#b7f32f4dd2c37a5f7992261797c59373704edc89"

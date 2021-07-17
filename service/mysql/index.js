@@ -10,11 +10,6 @@ const pool  = mysql.createPool({
 });
 
 
-// pool.query('SELECT * from posts', (err, data, fields) => {
-//   if (err) return;
-// });
-
-
 let query = ( sql, values ) => {
   return new Promise(( resolve, reject ) => {
     pool.getConnection( (err, connection) => {

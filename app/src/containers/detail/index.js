@@ -1,25 +1,35 @@
 import {Component} from "react";
 import style from './index.module.css'
+import axios from "../../apis/request";
+
 class Detail extends Component {
   constructor() {
     super();
+    this.state = {
+      title:'',
+      content:''
+    }
   }
+  async componentDidMount() {
+    let { uid } = this.props.match.params
+    let res =await axios.get(`/article/getById?uid=${uid}`)
+    this.setState({
+      ...res
+    })
+  }
+
   render() {
     return (
       <div>
         <div className={style.title}>
           <div>
-            有哪些你觉得不错的看书阅读灯可以推荐？
+            {this.state.title}
           </div>
         </div>
         <div className={style.content}>
-          索性就决定买专业阅读灯，专业阅读灯光线一般都可以多段调节，能满足我的调光需要，而且大部分都有护眼功能（前面提及的那几点）。
-          索性就决定买专业阅读灯，专业阅读灯光线一般都可以多段调节，能满足我的调光需要，而且大部分都有护眼功能（前面提及的那几点）。
-          索性就决定买专业阅读灯，专业阅读灯光线一般都可以多段调节，能满足我的调光需要，而且大部分都有护眼功能（前面提及的那几点）。
-          索性就决定买专业阅读灯，专业阅读灯光线一般都可以多段调节，能满足我的调光需要，而且大部分都有护眼功能（前面提及的那几点）。
-          索性就决定买专业阅读灯，专业阅读灯光线一般都可以多段调节，能满足我的调光需要，而且大部分都有护眼功能（前面提及的那几点）。
-          索性就决定买专业阅读灯，专业阅读灯光线一般都可以多段调节，能满足我的调光需要，而且大部分都有护眼功能（前面提及的那几点）。
-          索性就决定买专业阅读灯，专业阅读灯光线一般都可以多段调节，能满足我的调光需要，而且大部分都有护眼功能（前面提及的那几点）。
+          {
+            this.state.content
+          }
 
         </div>
       </div>

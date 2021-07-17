@@ -7,12 +7,18 @@ module.exports = (app) => {
   router.get('/',  async(ctx, next) => {
     ctx.body = 'haha'
   },)
-  router.get('/getList',  async(ctx, next) => {
+  router.get('/article/getList',  async(ctx, next) => {
     const res = await articleModel.getList()
     ctx.body = res
   },)
-  router.get('/123',  async(ctx, next) => {
-    ctx.body = 'haha123'
+  router.get('/article/getById',  async(ctx, next) => {
+    let {uid} = ctx.query
+    const res = await articleModel.getById(uid)
+    if(res) {
+      ctx.body = res[0]
+    }else {
+      ctx.body = null
+    }
   },)
 
   app.use(router.routes())

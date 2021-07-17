@@ -9,8 +9,11 @@ export default class Home extends Component {
     super(props)
   }
 
+  componentDidMount() {
+
+  }
+
   onClick() {
-    console.log(this.props)
     this.props.history.push('add')
   }
 

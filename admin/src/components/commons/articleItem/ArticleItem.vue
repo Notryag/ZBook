@@ -47,7 +47,6 @@ ref: title = ''
 ref: date = ''
 ref:tags = []
 ref:categories = []
-console.log(123);
 function pushArticle() {
 
 }
