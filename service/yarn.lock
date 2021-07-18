@@ -2075,11 +2075,6 @@ koa-convert@^1.2.0:
     co "^4.6.0"
     koa-compose "^3.0.0"
 
-koa-cors@^0.0.16:
-  version "0.0.16"
-  resolved "https://registry.npm.taobao.org/koa-cors/download/koa-cors-0.0.16.tgz#98107993a7909e34c042986c5ec6156d77f3432e"
-  integrity sha1-mBB5k6eQnjTAQphsXsYVbXfzQy4=
-
 koa-mysql-session@^0.0.2:
   version "0.0.2"
   resolved "https://registry.npm.taobao.org/koa-mysql-session/download/koa-mysql-session-0.0.2.tgz#b7f32f4dd2c37a5f7992261797c59373704edc89"
@@ -2158,6 +2153,11 @@ koa-views@^6.0.2:
     koa-send "^5.0.0"
     mz "^2.4.0"
     pretty "^2.0.0"
+
+koa2-cors@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.npm.taobao.org/koa2-cors/download/koa2-cors-2.0.6.tgz#9ad23df3a0b9bb84530b46f5944f3fb576086554"
+  integrity sha1-mtI986C5u4RTC0b1lE8/tXYIZVQ=
 
 koa@^2.3.0:
   version "2.13.1"
@@ -3383,6 +3383,11 @@ util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.npm.taobao.org/util-deprecate/download/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
+
+uuid@^8.3.2:
+  version "8.3.2"
+  resolved "https://registry.nlark.com/uuid/download/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
+  integrity sha1-gNW1ztJxu5r2xEXyGhoExgbO++I=
 
 v8flags@^2.1.1:
   version "2.1.1"

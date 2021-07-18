@@ -13,8 +13,7 @@
 <script setup>
 import  Header from '../../components/header/index.vue'
 import {reactive,ref} from 'vue'
-ref: a = '123'
-
+let a = ref('123')
 </script>
 <style lang="scss">
 .main {

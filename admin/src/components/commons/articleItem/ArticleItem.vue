@@ -41,12 +41,11 @@
 <script setup>
 import { reactive, ref } from "vue";
 
+let title =ref('')
+let date =ref('')
+let tags =ref([])
+let categories =ref([])
 
-
-ref: title = ''
-ref: date = ''
-ref:tags = []
-ref:categories = []
 function pushArticle() {
 
 }

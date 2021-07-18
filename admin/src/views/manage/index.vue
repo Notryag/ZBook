@@ -7,11 +7,13 @@
                     <template #title><i class="el-icon-message"></i>用户管理</template>
                     <el-menu-item-group>
                         <template #title>用户管理</template>
-                        <el-menu-item index="1-1">用户</el-menu-item>
-                        <el-menu-item index="1-2">日志</el-menu-item>
+                        <el-menu-item index="/manage/article">用户</el-menu-item>
+                        <el-menu-item index="/manage/article">日志</el-menu-item>
                     </el-menu-item-group>
                     <el-menu-item-group title="文章管理">
-                        <el-menu-item index="/manage/article">文章</el-menu-item>
+                        <el-menu-item index="/manage/article">文章列表</el-menu-item>
+                        <el-menu-item index="/manage/article/add">新增</el-menu-item>
+
                     </el-menu-item-group>
                 </el-submenu>
             </el-menu>

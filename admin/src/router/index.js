@@ -11,7 +11,12 @@ const router = createRouter({
       children: [
         {
           path: 'article',
+          name: 'articleList',
           component: () => import('../views/manage/article/index.vue'),
+        },
+        {
+          path: 'article/add',
+          component: () => import('../views/manage/article/add/index.vue'),
         },
       ],
     },
