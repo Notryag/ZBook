@@ -1,0 +1,53 @@
+@import url('./../../assets/style/common.less');
+
+.header-container {
+  position: fixed;
+  height: 50px;
+  transform-origin: top;
+  left: 0;
+  right: 0;
+  transition: .5s;
+  .common-container();
+
+  .inner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    .header-img {
+      width: 250px;
+      text-align: center;
+
+      img {
+        height: 50px;
+        width: auto;
+        border-radius: 25px;
+      }
+    }
+
+    .header-changeSkin {
+      width: 100px;
+      display: flex;
+      justify-content: center;
+
+      .ant-switch {
+        .cursor-pointer();
+      }
+    }
+
+    .header-search {
+      width: calc(100% - 350px);
+      margin-left: 15px;
+    }
+
+  }
+
+  background: var(--header-bg-hover-color);
+  z-index: 1000;
+  cursor: url('./../../assets/imgs/cursor/hand-link.cur'),
+  pointer;
+
+}
+

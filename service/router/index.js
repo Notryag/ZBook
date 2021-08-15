@@ -8,7 +8,7 @@ module.exports = (app) => {
     ctx.body = 'haha'
   },)
   router.get('/article/getList',  async(ctx, next) => {
-    const res = await articleModel.getList()
+    let res = await articleModel.getList()
     ctx.success(res)
   },)
   router.get('/article/getById',  async(ctx, next) => {

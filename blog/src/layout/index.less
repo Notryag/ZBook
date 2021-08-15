@@ -1,0 +1,28 @@
+@import url('./../assets/style/common.less');
+
+.layout-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  .app-container {
+    .common-container();
+  }
+
+  .main-container {
+    display: flex;
+    padding-top: 55px;
+    .common-container();
+    
+    .body-container{
+      .m-l-5();
+      width: calc(100% - 261px);
+      height: 100%;
+    }
+  }
+
+  .ant-back-top{
+    .cursor-pointer();
+  }
+
+  
+}
