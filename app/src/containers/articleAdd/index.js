@@ -1,9 +1,7 @@
 import {Component} from "react";
 
 class ArticleAdd extends Component {
-  constructor() {
-    super();
-  }
+
   render() {
     return (
       <div>

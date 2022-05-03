@@ -3,9 +3,9 @@ const config = {
   database: {
     DATABASE:'blog',
     USERNAME: 'admin',
-    PASSWORD: '213213',
+    PASSWORD: 'SDVtest@159',
     PORT:'3306',
-    HOST:'1231321321'
+    HOST:'47.104.230.32'
   }
 }
 

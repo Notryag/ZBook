@@ -3,7 +3,6 @@ import style from "./index.module.css";
 import {connect} from "react-redux";
 import {action} from '../../reducer/countReducer'
 import {bindActionCreators} from "redux";
-import { withRouter } from 'react-router-dom';
 
 const {increaseAction} = action
 class ArticleItem extends Component {
@@ -54,4 +53,4 @@ function mapDispatchToProps(dispatch) {
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(withRouter(ArticleItem))
+)(ArticleItem)

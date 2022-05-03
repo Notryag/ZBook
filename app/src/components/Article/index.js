@@ -2,7 +2,6 @@ import {Component} from "react";
 import style from './index.module.css'
 import ArticleItem from "./articleItem";
 import axios from "../../apis/request";
-import {withRouter} from 'react-router-dom';
 
 class Article extends Component {
   constructor() {
@@ -45,4 +44,4 @@ class Article extends Component {
   }
 }
 
-export default withRouter(Article)
+export default Article

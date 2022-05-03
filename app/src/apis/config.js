@@ -1,4 +1,4 @@
-const devBaseURL = 'http://localhost:4000';
+const devBaseURL = 'http://localhost:6060';
 const proBaseURL = 'http://production.org';
 
 export const BASE_URL = process.env.NODE_ENV === 'development' ? devBaseURL: proBaseURL;
